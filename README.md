@@ -1,4 +1,10 @@
 # Snack-Overflow
+## Table of Contents
+1. Project Description
+2. Demo 1: Signu-up/login Page
+## Project Description
+Snack Overflow is a website/system that helps office admins track snack inventory. Employees can request snacks, upvote their favorite items, and view what’s currently in stock. Admins receive notifications when inventory is running low.
+
 ## Demo 1: Sign-up/login page
 
 
