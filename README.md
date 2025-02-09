@@ -6,7 +6,10 @@
 Snack Overflow is a website/system that helps office admins track snack inventory. Employees can request snacks, upvote their favorite items, and view what’s currently in stock. Admins receive notifications when inventory is running low.
 
 ## Demo 1: Sign-up/login page
-
+Login using the following credentials: <br/>
+Name: admin <br/>
+Email: test@gmail.com <br/>
+Password: password
 
 ## Software Requirements
 This project was developed on VS Code. <br/> 
