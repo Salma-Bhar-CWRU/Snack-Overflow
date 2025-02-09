@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snack Overflow - Login & Register</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,14 +21,12 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 300px;
+            width: 350px;
         }
-        .tagline {
-            color: #4682b4;
-            font-style: italic;
-        }
-        .form-container {
-            margin-top: 20px;
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
         }
         .tabs button {
             background: none;
@@ -77,33 +74,28 @@
 <body>
     <div class="container">
         <h1>Snack Overflow</h1>
-        <p class="tagline">because one snack is never enough</p>
+        <p class="tagline">Because one snack is never enough</p>
         
-        <div class="form-container">
-            <div class="tabs">
-                <button id="login-tab" class="active">Login</button>
-                <button id="register-tab">Register</button>
-            </div>
-            
-            <form id="login-form" class="active">
-                <input type="email" id="login-email" placeholder="Email" required>
-                <input type="password" id="login-password" placeholder="Password" required>
-                <button type="submit">Login</button>
-                <a href="#" class="forgot-password" id="forgot-password">Forgot my password?</a>
-            </form>
-            
-            <form id="register-form">
-                <input type="text" id="register-name" placeholder="Full Name" required>
-                <input type="email" id="register-email" placeholder="Email" required>
-                <input type="password" id="register-password" placeholder="Password" required>
-                <button type="submit">Register</button>
-            </form>
-            
-            <form id="forgot-password-form">
-                <input type="email" id="reset-email" placeholder="Enter your email" required>
-                <button type="submit">Send Reset Link</button>
-            </form>
+        <div class="tabs">
+            <button id="login-tab" class="active">Login</button>
+            <button id="register-tab">Register</button>
         </div>
+        
+        <!-- Login Form -->
+        <form id="login-form" class="active">
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <a href="#" class="forgot-password">Forgot my password?</a>
+        </form>
+        
+        <!-- Registration Form -->
+        <form id="register-form">
+            <input type="text" id="register-username" placeholder="Username" required>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
     </div>
     
     <script>
@@ -112,15 +104,13 @@
             const registerTab = document.getElementById("register-tab");
             const loginForm = document.getElementById("login-form");
             const registerForm = document.getElementById("register-form");
-            const forgotPasswordLink = document.getElementById("forgot-password");
-            const forgotPasswordForm = document.getElementById("forgot-password-form");
 
+            // Toggle between login and register forms
             loginTab.addEventListener("click", () => {
                 loginTab.classList.add("active");
                 registerTab.classList.remove("active");
                 loginForm.classList.add("active");
                 registerForm.classList.remove("active");
-                forgotPasswordForm.classList.remove("active");
             });
 
             registerTab.addEventListener("click", () => {
@@ -128,19 +118,63 @@
                 loginTab.classList.remove("active");
                 registerForm.classList.add("active");
                 loginForm.classList.remove("active");
-                forgotPasswordForm.classList.remove("active");
             });
 
-            forgotPasswordLink.addEventListener("click", (e) => {
+            // Handle Login Form Submission
+            loginForm.addEventListener("submit", async (e) => {
                 e.preventDefault();
-                loginForm.classList.remove("active");
-                registerForm.classList.remove("active");
-                forgotPasswordForm.classList.add("active");
+                const email = document.getElementById("login-email").value;
+                const password = document.getElementById("login-password").value;
+
+                try {
+                    const response = await fetch('/api/auth/login', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ email, password })
+                    });
+
+                    const result = await response.json();
+                    if (response.ok) {
+                        alert('Login successful!');
+                        localStorage.setItem('token', result.token);
+                        localStorage.setItem('user', JSON.stringify(result.user));
+                        window.location.href = 'welcome.html';
+                    } else {
+                        alert(result.message);
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('An error occurred. Please try again.');
+                }
+            });
+
+            // Handle Registration Form Submission
+            registerForm.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                const username = document.getElementById("register-username").value;
+                const email = document.getElementById("register-email").value;
+                const password = document.getElementById("register-password").value;
+
+                try {
+                    const response = await fetch('/api/auth/register', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ username, email, password })
+                    });
+
+                    const result = await response.json();
+                    if (response.ok) {
+                        alert('Registration successful! Please log in.');
+                        loginTab.click();
+                    } else {
+                        alert(result.message);
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('An error occurred. Please try again.');
+                }
             });
         });
     </script>
 </body>
 </html>
-
-<!-- Backend Implementation (Node.js + MongoDB) -->
-<script src="server.js"></script>
