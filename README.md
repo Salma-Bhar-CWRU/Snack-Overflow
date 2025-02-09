@@ -9,7 +9,8 @@ Snack Overflow is a website/system that helps office admins track snack inventor
 Login using the following credentials: <br/>
 Name: admin <br/>
 Email: test@gmail.com <br/>
-Password: password
+Password: password <br/>
+Once logged in, you will be redirected to a welcome page. (add more descriptions of other functionalities later)
 
 ## Software Requirements
 This project was developed on VS Code. <br/> 
