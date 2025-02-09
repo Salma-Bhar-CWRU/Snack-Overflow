@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Overflow - Login & Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        .tagline {
+            color: #4682b4;
+            font-style: italic;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        .tabs button {
+            background: none;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            color: #4682b4;
+        }
+        .tabs .active {
+            font-weight: bold;
+            border-bottom: 2px solid #4682b4;
+        }
+        form {
+            display: none;
+        }
+        form.active {
+            display: block;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #4682b4;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #4682b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .forgot-password {
+            display: block;
+            margin-top: 10px;
+            color: #4682b4;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Snack Overflow</h1>
+        <p class="tagline">because one snack is never enough</p>
+        
+        <div class="form-container">
+            <div class="tabs">
+                <button id="login-tab" class="active">Login</button>
+                <button id="register-tab">Register</button>
+            </div>
+            
+            <form id="login-form" class="active">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <a href="#" class="forgot-password" id="forgot-password">Forgot my password?</a>
+            </form>
+            
+            <form id="register-form">
+                <input type="text" id="register-name" placeholder="Full Name" required>
+                <input type="email" id="register-email" placeholder="Email" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+            
+            <form id="forgot-password-form">
+                <input type="email" id="reset-email" placeholder="Enter your email" required>
+                <button type="submit">Send Reset Link</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const loginTab = document.getElementById("login-tab");
+            const registerTab = document.getElementById("register-tab");
+            const loginForm = document.getElementById("login-form");
+            const registerForm = document.getElementById("register-form");
+            const forgotPasswordLink = document.getElementById("forgot-password");
+            const forgotPasswordForm = document.getElementById("forgot-password-form");
+
+            loginTab.addEventListener("click", () => {
+                loginTab.classList.add("active");
+                registerTab.classList.remove("active");
+                loginForm.classList.add("active");
+                registerForm.classList.remove("active");
+                forgotPasswordForm.classList.remove("active");
+            });
+
+            registerTab.addEventListener("click", () => {
+                registerTab.classList.add("active");
+                loginTab.classList.remove("active");
+                registerForm.classList.add("active");
+                loginForm.classList.remove("active");
+                forgotPasswordForm.classList.remove("active");
+            });
+
+            forgotPasswordLink.addEventListener("click", (e) => {
+                e.preventDefault();
+                loginForm.classList.remove("active");
+                registerForm.classList.remove("active");
+                forgotPasswordForm.classList.add("active");
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!-- Backend Implementation (Node.js + MongoDB) -->
+<script src="server.js"></script>
