@@ -38,7 +38,9 @@ Notes: <br/>
 - Node.js runs the Express.js web server (server.js) <br/>
 - It listens for incoming requests from the frontend and sends responses <br/>
 - When a user logs in, the frontend sends a request to http://localhost:5000/api/auth/login, and Node.js processes it <br/>
-Further development of the system will continue, with additional features being implemented by the Demo 2 deadline. <br/>
+
+
+Further development of the system will continue, with additional features being implemented by the Demo 2 deadline. We will change to React for front end and implement the admin/employee features. <br/>
 
 ## Software Requirements
 This project was developed on VS Code. <br/> 
