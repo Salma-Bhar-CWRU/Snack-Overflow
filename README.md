@@ -6,11 +6,13 @@
 Snack Overflow is a website/system that helps office admins track snack inventory. Employees can request snacks, upvote their favorite items, and view what’s currently in stock. Admins receive notifications when inventory is running low.
 
 ## Demo 1: Sign-up/login page
-Login using the following credentials: <br/>
+Our test login uses the following credentials: <br/>
 Name: admin <br/>
 Email: test@gmail.com <br/>
 Password: pswd <br/>
-On the Register page, you enter your name, email, and password. The password is hashed and stored into a local MySQL database. Once you create your account, a confirmation message appears and you can switch to the login page to login with your credentials. Once logged in, you will be redirected to a personalized welcome page with your username with an option to logout. The rest of the system will be developed further by the upcoming Demo 2 deadline. <br/>
+On the Register page, you can create an account by entering your name, email, and password. The password is securely hashed and stored in a local MySQL database. After successful registration, a confirmation message appears, and you can navigate to the Login page to access your account using your credentials. <br/>
+Once logged in, you will be redirected to a personalized welcome page displaying your username, along with an option to log out. If you forget your password, you can click the "Forgot My Password" button, which takes you to a page where you can enter your email to receive a password reset link. <br/>
+Further development of the system will continue, with additional features being implemented by the Demo 2 deadline. <br/>
 ![image](https://github.com/user-attachments/assets/1dcbd519-c3c2-4a36-a26c-bcd2b71e4436)
 
 ![image](https://github.com/user-attachments/assets/f04da74a-011c-45b6-8f23-dff9a68409c7)
