@@ -10,7 +10,7 @@ Login using the following credentials: <br/>
 Name: admin <br/>
 Email: test@gmail.com <br/>
 Password: pswd <br/>
-On the Register page, you enter your name, email, and password. The password is hashed and stored into a local MySQL database. Once you create your account, a confirmation message appears and you can switch to the login page to login with your credentials. Once logged in, you will be redirected to a personalized welcome page with your username. The rest of the system will be developed further by the upcoming Demo 2 deadline. <br/>
+On the Register page, you enter your name, email, and password. The password is hashed and stored into a local MySQL database. Once you create your account, a confirmation message appears and you can switch to the login page to login with your credentials. Once logged in, you will be redirected to a personalized welcome page with your username with an option to logout. The rest of the system will be developed further by the upcoming Demo 2 deadline. <br/>
 ![image](https://github.com/user-attachments/assets/1dcbd519-c3c2-4a36-a26c-bcd2b71e4436)
 
 ![image](https://github.com/user-attachments/assets/f04da74a-011c-45b6-8f23-dff9a68409c7)
