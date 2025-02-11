@@ -60,7 +60,7 @@
             }
 
             try {
-                const response = await fetch('/api/auth/validate-token', {
+                const response = await fetch('http://localhost:5000/api/auth/validate-token', {
                     method: 'POST',
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
@@ -89,4 +89,3 @@
     </script>
 </body>
 </html>
-
