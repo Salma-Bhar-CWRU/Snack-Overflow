@@ -15,12 +15,13 @@ On the Register page, you can create an account by entering your name, email, an
 
 Once logged in, you will be redirected to a personalized welcome page displaying your username, along with an option to log out. If you forget your password, you can click the "Forgot My Password" button, which takes you to a page where you can enter your email to receive a password reset link. <br/>
 
-Further development of the system will continue, with additional features being implemented by the Demo 2 deadline. <br/>
 ![image](https://github.com/user-attachments/assets/1dcbd519-c3c2-4a36-a26c-bcd2b71e4436)
 
 ![image](https://github.com/user-attachments/assets/f04da74a-011c-45b6-8f23-dff9a68409c7)
 
-![image](https://github.com/user-attachments/assets/597612c0-106c-4848-b962-7cd326ce4ac8)
+![image](https://github.com/user-attachments/assets/597612c0-106c-4848-b962-7cd326ce4ac8) <br/>
+
+Further development of the system will continue, with additional features being implemented by the Demo 2 deadline. <br/>
 
 ## Software Requirements
 This project was developed on VS Code. <br/> 
