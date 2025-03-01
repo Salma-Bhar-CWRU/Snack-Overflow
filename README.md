@@ -43,6 +43,30 @@ Notes: <br/>
 
 ## Demo 2: Admin & Employee Features
 
+We first desgined and made some sketches of how we want our front-end of the admin and employee pages should look like. 
+
+We wanted to have the following features in the overall employee page : 
+1. Home page # This is where the employee can view the various snack options that are provided.
+2. Order History page # In this page employees can see the order status of any current orders and the previous orders they have placed. 
+3. Profile Page # This page shows the details of the employee i.e. Name, Email, snacks requests left per day etc. 
+4. A shopping cart page # This page shows the snacks that are added to cart where they can request the snacks. 
+
+This is how we wanted our home page of the Employee Page to look like : 
+
+<img width="822" alt="Screenshot 2025-03-01 at 5 07 17 PM" src="https://github.com/user-attachments/assets/40a473b8-fe47-4726-afec-dafb10c02cdd" /> <br/>
+
+This is how we wanted our Order History page of the Employee Page to look like : 
+<br/> 
+
+This is how we wanted our Profile page of the Employee Page to look like : 
+<br/>
+
+This is how we wanted our Order History page of the Employee Page to look like : 
+<br/>
+
+This is how we wanted our shopping cart page of the Employee Page to look like : 
+<br/>
+
 
 ## Software Requirements
 This project was developed on VS Code. <br/> 
