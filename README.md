@@ -52,20 +52,16 @@ We wanted to have the following features in the overall employee page :
 4. A shopping cart page # This page shows the snacks that are added to cart where they can request the snacks. 
 
 This is how we wanted our home page of the Employee Page to look like : 
-
 <img width="836" alt="Screenshot 2025-03-01 at 5 16 08 PM" src="https://github.com/user-attachments/assets/1af77c7f-c780-4bb1-87d6-7a0ab436f93c" /> <br/>
 
 This is how we wanted our Order History page of the Employee Page to look like : 
-<br/> 
+<img width="748" alt="Screenshot 2025-03-01 at 5 38 42 PM" src="https://github.com/user-attachments/assets/db690760-3e42-428e-9e0b-3c52cf897372" /> <br/> 
 
 This is how we wanted our Profile page of the Employee Page to look like : 
-<br/>
-
-This is how we wanted our Order History page of the Employee Page to look like : 
-<br/>
+<img width="866" alt="Screenshot 2025-03-01 at 6 00 18 PM" src="https://github.com/user-attachments/assets/30676b35-81f9-4154-b889-6ec502204aaf" /> <br/>
 
 This is how we wanted our shopping cart page of the Employee Page to look like : 
-<br/>
+<img width="857" alt="Screenshot 2025-03-01 at 6 29 34 PM" src="https://github.com/user-attachments/assets/ff137c63-d4be-4d8f-81d2-cee79b0756d5" /> <br/>
 
 
 ## Software Requirements
