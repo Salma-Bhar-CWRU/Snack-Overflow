@@ -2,6 +2,7 @@
 ## Table of Contents
 1. Project Description
 2. Demo 1: Sign-up/login Page
+3. Demo 2: Admin & Employee Features
 ## Project Description
 Snack Overflow is a website/system that helps office admins track snack inventory. Employees can request snacks, upvote their favorite items, and view what’s currently in stock. Admins receive notifications when inventory is running low.
 
@@ -40,7 +41,8 @@ Notes: <br/>
 - When a user logs in, the frontend sends a request to http://localhost:5000/api/auth/login, and Node.js processes it <br/>
 
 
-Further development of the system will continue, with additional features being implemented by the Demo 2 deadline. We will change to React for front end and implement the admin/employee features. <br/>
+## Demo 2: Admin & Employee Features
+
 
 ## Software Requirements
 This project was developed on VS Code. <br/> 
