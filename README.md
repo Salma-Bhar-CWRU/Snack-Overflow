@@ -53,7 +53,7 @@ We wanted to have the following features in the overall employee page :
 
 This is how we wanted our home page of the Employee Page to look like : 
 
-<img width="822" alt="Screenshot 2025-03-01 at 5 07 17 PM" src="https://github.com/user-attachments/assets/40a473b8-fe47-4726-afec-dafb10c02cdd" /> <br/>
+<img width="836" alt="Screenshot 2025-03-01 at 5 16 08 PM" src="https://github.com/user-attachments/assets/1af77c7f-c780-4bb1-87d6-7a0ab436f93c" /> <br/>
 
 This is how we wanted our Order History page of the Employee Page to look like : 
 <br/> 
