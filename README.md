@@ -16,11 +16,11 @@ On the Register page, you can create an account by entering your name, email, an
 
 Once logged in, you will be redirected to a personalized welcome page displaying your username, along with an option to log out. If you forget your password, you can click the "Forgot My Password" button, which takes you to a page where you can enter your email to receive a password reset link. <br/>
 
-![image](https://github.com/user-attachments/assets/1dcbd519-c3c2-4a36-a26c-bcd2b71e4436)
+![image](https://github.com/user-attachments/assets/9d7d7a20-366b-4357-9d78-bb1dab4e2e75)
 
-![image](https://github.com/user-attachments/assets/f04da74a-011c-45b6-8f23-dff9a68409c7)
+![image](https://github.com/user-attachments/assets/97df2bbc-8d9f-4678-b9a8-2b4d5f049c31)
 
-![image](https://github.com/user-attachments/assets/597612c0-106c-4848-b962-7cd326ce4ac8) <br/>
+![image](https://github.com/user-attachments/assets/ed78e111-3820-4a77-a728-369ec0da9fc1) <br/>
 
 ### Backend
 Structure: <br/>
