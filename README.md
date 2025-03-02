@@ -45,8 +45,10 @@ Notes: <br/>
 
 ## Demo 2: Admin & Employee Features
 
+### Switching from HTML/CSS/JavaScript to React Framework
 We initially built our project using simple HTML, CSS, and JavaScript, but based on our TA's recommendation, we transitioned to a React framework for better scalability and maintainability. To make this switch in VS Code, we first set up a React project using "npx create-react-app", then reorganized our code into reusable components. We migrated our existing styles and logic, integrated React's state management where needed, and updated our workflow to adapt to React’s modular approach. We reuploaded the updated code files and structure to this repository. <br/>
 
+### Front-end sketching of pages
 Then, we desgined and made some sketches of how we want our front-end of the admin and employee pages should look like.  <br/>
 
 We wanted to have the following features in the overall employee page : 
