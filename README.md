@@ -86,6 +86,7 @@ This is how the statistics of the snacks page will look like :
 <img width="862" alt="Screenshot 2025-03-02 at 4 24 10 PM" src="https://github.com/user-attachments/assets/0066da91-2e5a-4f8a-9c9b-8bea6a396544" /> <br/>
 
 This is how the snack inventory will look like : 
+<img width="864" alt="Screenshot 2025-03-02 at 4 39 49 PM" src="https://github.com/user-attachments/assets/337c19f8-42e4-4ac7-9598-d8cf10080f25" /> <br/>
 
 This is how the profile page is going to look like : 
 
