@@ -43,7 +43,9 @@ Notes: <br/>
 
 ## Demo 2: Admin & Employee Features
 
-We first desgined and made some sketches of how we want our front-end of the admin and employee pages should look like. 
+We initially built our project using simple HTML, CSS, and JavaScript, but based on our TA's recommendation, we transitioned to a React framework for better scalability and maintainability. To make this switch in VS Code, we first set up a React project using "npx create-react-app", then reorganized our code into reusable components. We migrated our existing styles and logic, integrated React's state management where needed, and updated our workflow to adapt to React’s modular approach. We reuploaded the updated code files and structure to this repository. <br/>
+
+Then, we desgined and made some sketches of how we want our front-end of the admin and employee pages should look like.  <br/>
 
 We wanted to have the following features in the overall employee page : 
 1. Home page # This is where the employee can view the various snack options that are provided.
@@ -62,7 +64,6 @@ This is how we wanted our Profile page of the Employee Page to look like :
 
 This is how we wanted our shopping cart page of the Employee Page to look like : 
 <img width="857" alt="Screenshot 2025-03-01 at 6 29 34 PM" src="https://github.com/user-attachments/assets/ff137c63-d4be-4d8f-81d2-cee79b0756d5" /> <br/>
-
 
 ## Software Requirements
 This project was developed on VS Code. <br/> 
