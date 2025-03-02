@@ -91,6 +91,12 @@ This is how the snack inventory will look like :
 This is how the profile page is going to look like : 
 <img width="816" alt="Screenshot 2025-03-02 at 4 45 00 PM" src="https://github.com/user-attachments/assets/4616ce08-7588-47de-b335-114bd4363223" /> <br/>
 
+### Feature 1: Functional Employee Dashboard (order + view order history)
+![image](https://github.com/user-attachments/assets/85d2aba7-e2f1-437c-b85e-8fbe26c2e8f4)
+![image](https://github.com/user-attachments/assets/43227baf-dad8-4db1-b2e0-f8761fe9b17c)
+
+### Feature 2: Functional Admin Dashboard (viewing, approving, and declining orders)
+![image](https://github.com/user-attachments/assets/a24e0824-4c16-45f4-8223-42749117336d)
 
 ## Software Requirements
 This project was developed on VS Code. <br/> 
