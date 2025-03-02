@@ -1,43 +1,70 @@
 const express = require('express');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const nodemailer = require('nodemailer');
-const db = require('../db');
+const bcrypt = require('bcryptjs'); // Hashing passwords
+const jwt = require('jsonwebtoken'); // Authentication tokens
+const nodemailer = require('nodemailer'); // to send email to reset password
+const db = require('../db'); // Import database connection
 require('dotenv').config();
 
 const router = express.Router();
 
 // Register
 router.post('/register', async (req, res) => {
-    const { username, email, password } = req.body;
-    const hashedPassword = await bcrypt.hash(password, 10);
+    try {
+        const { username, email, password, userType } = req.body;
 
-    db.query('INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)',
-        [username, email, hashedPassword],
-        (err, result) => {
-            if (err) return res.status(500).json({ message: "Registration failed", error: err });
-            res.status(201).json({ message: "User registered successfully" });
-        }
-    );
+        // Normalize email to avoid case sensitivity issues
+        const normalizedEmail = email.toLowerCase();
+
+        // Hash password before storing
+        const hashedPassword = await bcrypt.hash(password, 10);
+
+        db.query(
+            'INSERT INTO users (username, email, password_hash, user_type) VALUES (?, ?, ?, ?)',
+            [username, normalizedEmail, hashedPassword, userType],
+            (err, result) => {
+                if (err) {
+                    console.error("Error inserting user:", err);
+                    return res.status(500).json({ message: "Registration failed", error: err });
+                }
+
+                res.status(201).json({ message: "User registered successfully", user: { username, email: normalizedEmail, userType } });
+            }
+        );
+    } catch (error) {
+        console.error("Registration error:", error);
+        res.status(500).json({ message: "Server error" });
+    }
 });
+
 
 // Login
-router.post('/login', (req, res) => {
-    const { email, password } = req.body;
+router.post('/login', async (req, res) => {
+    try {
+        const { email, password } = req.body;
+        const normalizedEmail = email.toLowerCase(); 
 
-    db.query('SELECT * FROM users WHERE email = ?', [email], async (err, results) => {
-        if (err || results.length === 0) return res.status(401).json({ message: "User not found" });
+        db.query('SELECT * FROM users WHERE email = ?', [normalizedEmail], async (err, results) => {
+            if (err) return res.status(500).json({ message: "Server error" });
+            if (results.length === 0) return res.status(401).json({ message: "Invalid email or password" });
 
-        const user = results[0];
-        const passwordMatch = await bcrypt.compare(password, user.password_hash);
+            const user = results[0];
+            const passwordMatch = await bcrypt.compare(password, user.password_hash);
+            if (!passwordMatch) return res.status(401).json({ message: "Invalid email or password" });
 
-        if (!passwordMatch) return res.status(401).json({ message: "Invalid credentials" });
+            // Generate JWT Token
+            const token = jwt.sign({ id: user.id, email: user.email, userType: user.user_type }, process.env.JWT_SECRET, { expiresIn: "1h" });
 
-        const token = jwt.sign({ id: user.id, email: user.email }, process.env.JWT_SECRET, { expiresIn: "1h" });
-
-        res.json({ token, user: { id: user.id, username: user.username, email: user.email } });
-    });
+            res.json({
+                message: "Login successful",
+                token,
+                user: { id: user.id, username: user.username, email: user.email, userType: user.user_type }
+            });
+        });
+    } catch (error) {
+        res.status(500).json({ message: "Server error" });
+    }
 });
+
 
 // Token Validation
 router.post('/validate-token', (req, res) => {
@@ -104,3 +131,5 @@ router.post('/reset-password/:token', async (req, res) => {
 });
 
 module.exports = router;
+
+
