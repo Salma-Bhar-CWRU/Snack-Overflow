@@ -1,0 +1,104 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #4682b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 350px;
+}
+
+/* Tabs for switching login/register */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #4682b4;
+}
+
+.tabs .active {
+  font-weight: bold;
+  border-bottom: 2px solid #4682b4;
+}
+
+/* Form Inputs */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #4682b4;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+select {
+  appearance: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #35689e;
+}
+
+/* Forgot password */
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  color: #4682b4;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4682b4;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Welcome Page */
+.welcome-container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
