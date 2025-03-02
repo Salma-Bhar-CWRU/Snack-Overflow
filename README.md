@@ -89,6 +89,7 @@ This is how the snack inventory will look like :
 <img width="864" alt="Screenshot 2025-03-02 at 4 39 49 PM" src="https://github.com/user-attachments/assets/337c19f8-42e4-4ac7-9598-d8cf10080f25" /> <br/>
 
 This is how the profile page is going to look like : 
+<img width="816" alt="Screenshot 2025-03-02 at 4 45 00 PM" src="https://github.com/user-attachments/assets/f4b35f0c-e8da-49e5-888f-dd872d1bb961" /> <br/>
 
 
 ## Software Requirements
