@@ -51,7 +51,7 @@ We initially built our project using simple HTML, CSS, and JavaScript, but based
 ### Front-end sketching of pages
 Then, we desgined and made some sketches of how we want our front-end of the admin and employee pages should look like.  <br/>
 
-We wanted to have the following features in the overall employee page : 
+We wanted to have the following features in the employee page : 
 1. Home page # This is where the employee can view the various snack options that are provided.
 2. Order History page # In this page employees can see the order status of any current orders and the previous orders they have placed. 
 3. Profile Page # This page shows the details of the employee i.e. Name, Email, snacks requests left per day etc. 
@@ -68,6 +68,25 @@ This is how we wanted our Profile page of the Employee Page to look like :
 
 This is how we wanted our shopping cart page of the Employee Page to look like : 
 <img width="857" alt="Screenshot 2025-03-01 at 6 29 34 PM" src="https://github.com/user-attachments/assets/ff137c63-d4be-4d8f-81d2-cee79b0756d5" /> <br/>
+
+We wanted to have the following features in the admin page : 
+1. Home Page
+2. Tracking employee order history page
+3. Statistics of snacks page
+4. Snack Inventory Page
+5. Profile page
+
+This is how the home page of the employee page will look like : 
+<img width="774" alt="Screenshot 2025-03-02 at 3 48 22 PM" src="https://github.com/user-attachments/assets/f521d778-3b87-4944-bdff-5fb1726302f1" />
+
+This is how the tracking employee History Page will look like :
+
+This is how the statistics of the snacks page will look like : 
+
+This is how the snack inventory will look like : 
+
+This is how the profile page is going to look like : 
+
 
 ## Software Requirements
 This project was developed on VS Code. <br/> 
