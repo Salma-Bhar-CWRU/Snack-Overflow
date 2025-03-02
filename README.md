@@ -77,19 +77,19 @@ We wanted to have the following features in the admin page :
 5. Profile page
 
 This is how the home page of the employee page will look like : 
-<br/>
+<img width="774" alt="Screenshot 2025-03-02 at 3 48 22 PM" src="https://github.com/user-attachments/assets/b6d06781-6f0b-4242-b18c-da5b9592dba8" /> <br/>
 
-This is how the tracking employee History Page will look like :
- <br/>
+This is how the tracking employee History Page will look like : 
+<img width="864" alt="Screenshot 2025-03-02 at 4 07 29 PM" src="https://github.com/user-attachments/assets/4463c6c1-91b8-4e2c-af2f-5950969c51fd" /> <br/>
 
 This is how the statistics of the snacks page will look like : 
- <br/>
+<img width="862" alt="Screenshot 2025-03-02 at 4 24 10 PM" src="https://github.com/user-attachments/assets/0095fd30-3ca1-4a49-98ad-24fd37e30b3e" /> <br/>
 
 This is how the snack inventory will look like : 
-<br/>
+<img width="864" alt="Screenshot 2025-03-02 at 4 39 49 PM" src="https://github.com/user-attachments/assets/3b70a044-03e8-48f2-85df-8871d54f8c2d" /> <br/>
 
 This is how the profile page is going to look like : 
- <br/>
+<img width="816" alt="Screenshot 2025-03-02 at 4 45 00 PM" src="https://github.com/user-attachments/assets/4616ce08-7588-47de-b335-114bd4363223" /> <br/>
 
 
 ## Software Requirements
