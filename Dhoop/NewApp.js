@@ -8,16 +8,21 @@ import Welcome from "./pages/Welcome";
 import OrderHistory from "./pages/OrderHistory"; // Import the Order History Component
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
-        <Route path="/welcome" element={<Welcome />} />
-        <Route path="/order-history" element={<OrderHistory />} /> {/* New Route for Orders */}
-      </Routes>
-    </Router>
+  return React.createElement(
+    Router,
+    null,
+    React.createElement(
+      Routes,
+      null,
+      React.createElement(Route, { path: "/", element: React.createElement(Login) }),
+      React.createElement(Route, { path: "/register", element: React.createElement(Register) }),
+      React.createElement(Route, { path: "/forgot-password", element: React.createElement(ForgotPassword) }),
+      React.createElement(Route, { path: "/reset-password", element: React.createElement(ResetPassword) }),
+      React.createElement(Route, { path: "/welcome", element: React.createElement(Welcome) }),
+      React.createElement(Route, { path: "/order-history", element: React.createElement(OrderHistory) }) // New Route for Orders
+    )
   );
 }
+
+export default App;
+
