@@ -83,6 +83,7 @@ This is how the tracking employee History Page will look like :
 <img width="864" alt="Screenshot 2025-03-02 at 4 07 29 PM" src="https://github.com/user-attachments/assets/10f0dadb-d677-482c-b342-ed6dd7fc5311" /> <br/>
 
 This is how the statistics of the snacks page will look like : 
+<img width="862" alt="Screenshot 2025-03-02 at 4 24 10 PM" src="https://github.com/user-attachments/assets/0066da91-2e5a-4f8a-9c9b-8bea6a396544" /> <br/>
 
 This is how the snack inventory will look like : 
 
