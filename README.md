@@ -21,7 +21,9 @@ Once logged in, you will be redirected to a personalized welcome page displaying
 
 ![image](https://github.com/user-attachments/assets/97df2bbc-8d9f-4678-b9a8-2b4d5f049c31)
 
-![image](https://github.com/user-attachments/assets/ed78e111-3820-4a77-a728-369ec0da9fc1) <br/>
+![image](https://github.com/user-attachments/assets/ed78e111-3820-4a77-a728-369ec0da9fc1) 
+
+![image](https://github.com/user-attachments/assets/a473916b-a954-435f-815d-f149a4c648d6) <br/>
 
 ### Backend
 Structure: <br/>
