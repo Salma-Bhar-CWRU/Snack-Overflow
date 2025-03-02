@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import "./../index.css";
 
 function ResetPassword() {
   const [password, setPassword] = useState("");
@@ -22,8 +23,9 @@ function ResetPassword() {
   return (
     <div className="container">
       <h1>Reset Password</h1>
+      <p>Enter your new password below.</p>
       <form onSubmit={handleReset}>
-        <input type="password" placeholder="Enter new password" onChange={(e) => setPassword(e.target.value)} required />
+        <input type="password" placeholder="New Password" onChange={(e) => setPassword(e.target.value)} required />
         <button type="submit">Reset Password</button>
       </form>
     </div>

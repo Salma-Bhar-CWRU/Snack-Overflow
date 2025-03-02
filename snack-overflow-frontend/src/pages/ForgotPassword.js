@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import "./../index.css";
 
 function ForgotPassword() {
   const [email, setEmail] = useState("");
@@ -17,8 +18,9 @@ function ForgotPassword() {
   return (
     <div className="container">
       <h1>Forgot Password</h1>
+      <p>Enter your email, and we’ll send you a reset link.</p>
       <form onSubmit={handleSubmit}>
-        <input type="email" placeholder="Enter your email" onChange={(e) => setEmail(e.target.value)} required />
+        <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
         <button type="submit">Send Reset Link</button>
       </form>
     </div>

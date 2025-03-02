@@ -29,15 +29,17 @@ function Login() {
 
         localStorage.setItem("token", response.data.token);
         localStorage.setItem("user", JSON.stringify(response.data.user));
-        navigate("/welcome");
-    } catch (error) {
-        if (error.response && error.response.data) {
-            alert(error.response.data.message); // Show correct error message
+
+        if (response.data.user.userType === "admin") {
+            navigate("/admin-dashboard"); 
         } else {
-            alert("Login failed. Please try again.");
+            navigate("/dashboard"); 
         }
+    } catch (error) {
+        alert("Login failed. Please try again.");
     }
 };
+
 
   // Handle Register
   const handleRegister = async (e) => {
