@@ -93,9 +93,9 @@ This is how the profile page is going to look like :
 
 ### Feature 1: Functional Employee Dashboard (order + view order history)
 
-Overview
+Overview: 
 The Employee Dashboard serves as the primary interface for employees to browse available snacks, place orders, and track their order history. This ensures a smooth and intuitive experience for employees when interacting with the snack inventory system.
-# Functionalities
+### Functionalities
 ✅ 1. Employee Welcome Page
 ![image](https://github.com/user-attachments/assets/85d2aba7-e2f1-437c-b85e-8fbe26c2e8f4)
 * Displays a personalized welcome message (Welcome Back, t2).
@@ -122,11 +122,11 @@ The Employee Dashboard serves as the primary interface for employees to browse a
 * The page provides real-time tracking of an employee’s snack requests.
 
 ### Feature 2: Functional Admin Dashboard (viewing, approving, and declining orders)
-Overview
+Overview: 
 The Admin Panel provides administrators with full control over snack requests. It allows them to view, approve, and decline orders, ensuring proper management of inventory and employee requests.
 ![image](https://github.com/user-attachments/assets/a24e0824-4c16-45f4-8223-42749117336d)
 
-# Functionalities
+### Functionalities
 ✅ 1. Admin Dashboard
 * Displays a personalized admin greeting (Welcome, t4).
 * Provides an overview of all orders in a structured table.
@@ -149,7 +149,7 @@ The Admin Panel provides administrators with full control over snack requests. I
     * Clicking Decline updates the status to "Denied", rejecting the request.
 * The system ensures inventory control and prevents duplicate orders.
   
-### Summary of the Functionalities 
+## Summary of the Functionalities 
 The Employee Dashboard allows employees to browse available snacks, place orders, and track their order history. Employees can request snacks directly from the system and monitor the status of their requests, which may be Approved, Denied, or Pending. However, they do not have administrative control over orders. 
 On the other hand, the Admin Dashboard is designed for managing snack requests, where admins have the authority to approve or decline orders. While employees can only track their own orders, admins oversee all requests and update their statuses in real time. Employees do not have access to order management, ensuring that only admins can control the approval process.
 
