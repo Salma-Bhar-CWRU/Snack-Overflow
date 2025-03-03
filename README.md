@@ -147,7 +147,6 @@ The Admin Panel provides administrators with full control over snack requests. I
 * Approval Workflow:
     * Clicking Approve updates the status to "Approved", allowing the request to be fulfilled.
     * Clicking Decline updates the status to "Denied", rejecting the request.
-* The system ensures inventory control and prevents duplicate orders.
   
 ## Summary of the Functionalities 
 The Employee Dashboard allows employees to browse available snacks, place orders, and track their order history. Employees can request snacks directly from the system and monitor the status of their requests, which may be Approved, Denied, or Pending. However, they do not have administrative control over orders. 
