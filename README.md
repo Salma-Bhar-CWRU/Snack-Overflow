@@ -92,11 +92,66 @@ This is how the profile page is going to look like :
 <img width="816" alt="Screenshot 2025-03-02 at 4 45 00 PM" src="https://github.com/user-attachments/assets/4616ce08-7588-47de-b335-114bd4363223" /> <br/>
 
 ### Feature 1: Functional Employee Dashboard (order + view order history)
+
+Overview
+The Employee Dashboard serves as the primary interface for employees to browse available snacks, place orders, and track their order history. This ensures a smooth and intuitive experience for employees when interacting with the snack inventory system.
+# Functionalities
+✅ 1. Employee Welcome Page
 ![image](https://github.com/user-attachments/assets/85d2aba7-e2f1-437c-b85e-8fbe26c2e8f4)
+* Displays a personalized welcome message (Welcome Back, t2).
+* Shows available snack options in a grid format.
+* Each snack card contains:
+    * Snack name.
+    * "+ Order" button to add the item to the request queue.
+  * Navigation Sidebar allows easy access to:
+    * Home – Main dashboard.
+    * Order History – Track past orders.
+    * Profile – Employee details (not shown in the image).
+    * Logout – Securely exit the system
+   
+✅ 2. Order History Page
 ![image](https://github.com/user-attachments/assets/43227baf-dad8-4db1-b2e0-f8761fe9b17c)
 
+* Displays all orders placed by the logged-in employee (Order History for t2).
+* Table format containing:
+    * Order Number – Unique identifier for tracking.
+    * Snack Item – Name of the snack ordered.
+    * Snack ID – Identifier for the snack in inventory.
+    * Date Ordered – When the order was placed.
+    * Order Status – Indicates approval (Approved), rejection (Denied), or processing (Pending).
+* The page provides real-time tracking of an employee’s snack requests.
+
 ### Feature 2: Functional Admin Dashboard (viewing, approving, and declining orders)
+Overview
+The Admin Panel provides administrators with full control over snack requests. It allows them to view, approve, and decline orders, ensuring proper management of inventory and employee requests.
 ![image](https://github.com/user-attachments/assets/a24e0824-4c16-45f4-8223-42749117336d)
+
+# Functionalities
+✅ 1. Admin Dashboard
+* Displays a personalized admin greeting (Welcome, t4).
+* Provides an overview of all orders in a structured table.
+* Navigation Sidebar includes:
+    * Dashboard – Main admin control panel.
+    * Logout – Securely exit the system.
+
+✅ 2. Order Management (Approve/Deny Orders)
+* Table format displaying all snack requests from employees.
+* Columns include:
+    * Order Number – Unique identifier for tracking requests.
+    * User ID – Employee who placed the order.
+    * Snack – Name of the snack requested.
+    * Date Ordered – When the order was placed.
+    * Status – Order state (Pending, Approved, Denied).
+    * Actions – Approve or Deny buttons.
+      
+* Approval Workflow:
+    * Clicking Approve updates the status to "Approved", allowing the request to be fulfilled.
+    * Clicking Decline updates the status to "Denied", rejecting the request.
+* The system ensures inventory control and prevents duplicate orders.
+  
+### Summary of the Functionalities 
+The Employee Dashboard allows employees to browse available snacks, place orders, and track their order history. Employees can request snacks directly from the system and monitor the status of their requests, which may be Approved, Denied, or Pending. However, they do not have administrative control over orders. 
+On the other hand, the Admin Dashboard is designed for managing snack requests, where admins have the authority to approve or decline orders. While employees can only track their own orders, admins oversee all requests and update their statuses in real time. Employees do not have access to order management, ensuring that only admins can control the approval process.
 
 ## Software Requirements
 This project was developed on VS Code. <br/> 
