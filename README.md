@@ -76,7 +76,7 @@ We wanted to have the following features in the admin page :
 4. Snack Inventory Page
 5. Profile page
 
-This is how the home page of the employee page will look like : 
+This is how the home page of the admin page will look like : 
 <img width="774" alt="Screenshot 2025-03-02 at 3 48 22 PM" src="https://github.com/user-attachments/assets/b6d06781-6f0b-4242-b18c-da5b9592dba8" /> <br/>
 
 This is how the tracking employee History Page will look like : 
