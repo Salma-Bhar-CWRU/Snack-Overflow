@@ -5,7 +5,9 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 const authRoutes = require('./routes/auth');
 const snackRoutes = require('./routes/snacks');
-const orderRoutes = require('./routes/orders'); // Import order routes
+const orderRoutes = require('./routes/orders'); 
+const inventoryRoutes = require('./routes/inventory');
+const statsRoutes = require('./routes/stats');
 
 const app = express();
 app.use(cors());
@@ -13,7 +15,9 @@ app.use(bodyParser.json());
 
 app.use('/api/auth', authRoutes);
 app.use('/api/snacks', snackRoutes);
-app.use('/api/orders', orderRoutes); // Add order history API
+app.use('/api/orders', orderRoutes);
+app.use('/api/inventory', inventoryRoutes);
+app.use('/api/stats', statsRoutes);
 
 // Serve React frontend
 app.use(express.static(path.join(__dirname, 'client/build')));
@@ -23,3 +27,5 @@ app.get('*', (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+
