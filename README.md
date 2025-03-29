@@ -152,6 +152,13 @@ The Admin Panel provides administrators with full control over snack requests. I
 The Employee Dashboard allows employees to browse available snacks, place orders, and track their order history. Employees can request snacks directly from the system and monitor the status of their requests, which may be Approved, Denied, or Pending. However, they do not have administrative control over orders. 
 On the other hand, the Admin Dashboard is designed for managing snack requests, where admins have the authority to approve or decline orders. While employees can only track their own orders, admins oversee all requests and update their statuses in real time. Employees do not have access to order management, ensuring that only admins can control the approval process.
 
+## Demo 3: Adding profiles, statistics page, and inventory limits
+For Demo 3 we are adding the following:
+- Admin profile page
+- User profile page
+- Statistics page
+- Adding limits function to inventory
+
 ## Software Requirements
 This project was developed on VS Code. <br/> 
 For the login page, make sure to install the "REST Client" to test API requests inside VS Code. You should also have extensions to support HTML, CSS, and JavaScript in VS Code. <br/>
