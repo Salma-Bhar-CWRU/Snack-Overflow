@@ -3,6 +3,7 @@
 1. Project Description
 2. Demo 1: Sign-up/login Page
 3. Demo 2: Admin & Employee Features
+4. Demo 3: Adding Profiles, Statistics Page, and Inventory Limits
 ## Project Description
 Snack Overflow is a website/system that helps office admins track snack inventory. Employees can request snacks, upvote their favorite items, and view what’s currently in stock. Admins receive notifications when inventory is running low.
 
@@ -152,7 +153,7 @@ The Admin Panel provides administrators with full control over snack requests. I
 The Employee Dashboard allows employees to browse available snacks, place orders, and track their order history. Employees can request snacks directly from the system and monitor the status of their requests, which may be Approved, Denied, or Pending. However, they do not have administrative control over orders. 
 On the other hand, the Admin Dashboard is designed for managing snack requests, where admins have the authority to approve or decline orders. While employees can only track their own orders, admins oversee all requests and update their statuses in real time. Employees do not have access to order management, ensuring that only admins can control the approval process.
 
-## Demo 3: Adding profiles, statistics page, and inventory limits
+## Demo 3: Adding Profiles, Statistics Page, and Inventory Limits
 For Demo 3 we are adding the following:
 - Admin profile page
 - User profile page
