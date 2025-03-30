@@ -149,17 +149,67 @@ The Admin Panel provides administrators with full control over snack requests. I
     * Clicking Approve updates the status to "Approved", allowing the request to be fulfilled.
     * Clicking Decline updates the status to "Denied", rejecting the request.
   
-## Summary of the Functionalities 
+### Summary of the Functionalities 
 The Employee Dashboard allows employees to browse available snacks, place orders, and track their order history. Employees can request snacks directly from the system and monitor the status of their requests, which may be Approved, Denied, or Pending. However, they do not have administrative control over orders. 
 On the other hand, the Admin Dashboard is designed for managing snack requests, where admins have the authority to approve or decline orders. While employees can only track their own orders, admins oversee all requests and update their statuses in real time. Employees do not have access to order management, ensuring that only admins can control the approval process.
 
 ## Demo 3: Adding Profiles, Statistics Page, and Snack Inventory
 For Demo 3 we are adding the following:
-- Admin profile page
-- User profile page
-- Statistics page
-- Snack Inventory Page
-- Adding limits function to inventory
+### 1. Admin profile page
+Admins now have a personal profile dashboard displaying:
+- Their admin name, ID, and email.
+Two key action buttons:
+- Check monthly statistics: Navigate to the snack stats page.
+- Request snack orders: Go directly to the inventory reorder section. </br>
+![image](https://github.com/user-attachments/assets/4d4d6e23-01c5-4047-aedd-1d2665677774)
+
+### 2. User profile page
+Employees now have an updated profile page that includes:
+- Employee ID and email.
+- Top 3 favorite snacks.
+- Snack request limit tracker: shows how many snack orders the employee has left for the day. </br>
+![image](https://github.com/user-attachments/assets/5f7b838b-c84c-405f-8082-2c79c0238cab)
+
+### 3. Statistics page for Admins
+Admins can now view snack request statistics across all employees:
+- A dynamic pie chart visualizes snack popularity.
+- A table shows the number of orders for each snack. </br>
+![image](https://github.com/user-attachments/assets/03f58347-d4f8-4d5f-bcec-b26eeb703e7f)
+
+### 4. Snack Inventory Page for Admins
+Admins have access to a detailed inventory page where they can:
+- Add new snack items or update existing stock.
+- See current quantity, expiry date, and reorder thresholds.
+- Track items that need restocking.
+- Real-time inventory updates based on employee orders ensure transparency and efficient restocking. </br>
+![image](https://github.com/user-attachments/assets/c34dcb65-455d-4ceb-ad83-acf0df80f7bf)
+
+### 5. Smart Snack Control Features
+We introduced several control mechanisms to improve fairness and system management:
+- Daily Snack Limit: Each employee has a fixed daily snack order limit. Once they reach their limit, all future requests are denied until the next day.
+- Auto-Renew Limit: Snack request limits automatically reset daily (simulated based on date changes).
+- Inventory-Linked Orders: When a snack is ordered:
+   - Its quantity is immediately reduced in the inventory.
+   - If a snack is out of stock, employees receive a message and cannot place orders for it.
+
+### 6. Unified Side Navigation Bar for Admins & Employees
+To improve usability and create a clean, cohesive UI experience, we designed a role-based side navigation bar that updates dynamically depending on whether the logged-in user is an Admin or Employee.
+Employee Sidebar includes the following tabs:
+- 🏠 Dashboard: Browse and request snacks.
+- 👤 Profile: View employee details and daily snack limit.
+- 📜 Order History: Track previous and current snack requests.
+- 🚪 Logout </br>
+![image](https://github.com/user-attachments/assets/60b2ac0e-820e-45f1-ae28-225a60fb4b01)
+Admin Sidebar includes the following tabs:
+- 📊 Dashboard: View quick admin summary.
+- 👤 Profile: See admin credentials and access management tools.
+- 📦 Inventory: Add/edit snacks, manage stock and reorders.
+- 📈 Stats: View snack popularity statistics.
+- 🚪 Logout </br>
+![image](https://github.com/user-attachments/assets/746fe2bb-a992-4eba-97ac-e2f5ade99b2a) 
+
+### Summary of functionalities
+In Demo 3, we enhanced Snack Overflow with personalized profile pages for both admins and employees, introduced a real-time snack inventory system that updates with every order, and implemented daily snack request limits that reset automatically each day. Admins can now view snack popularity through a dedicated statistics page with visual charts, manage inventory with expiry tracking and reorder thresholds, and prevent employees from ordering out-of-stock items. Additionally, a unified and role-based sidebar dynamically adjusts for admins and employees, streamlining navigation and improving the overall user experience.
 
 ## Software Requirements
 This project was developed on VS Code. <br/> 
