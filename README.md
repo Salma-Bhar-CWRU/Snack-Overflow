@@ -199,7 +199,7 @@ Employee Sidebar includes the following tabs:
 - 👤 Profile: View employee details and daily snack limit.
 - 📜 Order History: Track previous and current snack requests.
 - 🚪 Logout </br>
-![image](https://github.com/user-attachments/assets/60b2ac0e-820e-45f1-ae28-225a60fb4b01)
+![image](https://github.com/user-attachments/assets/60b2ac0e-820e-45f1-ae28-225a60fb4b01) </br>
 Admin Sidebar includes the following tabs:
 - 📊 Dashboard: View quick admin summary.
 - 👤 Profile: See admin credentials and access management tools.
