@@ -1,5 +1,10 @@
-# Project Name : SnackOverflow 
+<div align="center">
+
+# Project Name : SnackOverflow  
+
 ![image](https://github.com/user-attachments/assets/6124f04a-3ca5-4c09-94b5-996c95e83ff0)
+
+</div>
 
 ## Project Description
 
