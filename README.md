@@ -49,20 +49,20 @@ Data Model Diagram (Snack Order Flow)
 
 - Setup Steps (In the terminal) 
 
-    1. Clone the repository
+    1. Clone the repository </br>
     https://github.com/your-team/snack-overflow.git
 
-    2. Start the frontend (React app)
-    cd snack-overflow-frontend
-    npm install
+    2. Start the frontend (React app) </br>
+    cd snack-overflow-frontend </br>
+    npm install </br>
     npm run start
 
-    3. Start the backend (Node.js server)
-    cd ../snack_inventory_backend
-    npm install
-    npm run start
-
-- Notes
+    3. Start the backend (Node.js server) </br>
+    cd ../snack_inventory_backend </br>
+    npm install </br>
+    npm run start </br>
+</br>
+- Notes  </br>
   - Step 2 runs the web app frontend (React.js).
   - Step 3 starts the backend server that connects to the MySQL database.
   
@@ -70,7 +70,7 @@ Data Model Diagram (Snack Order Flow)
 
 - For Non-Technical Users
     1. Register / Log In → Open the app in your browser and click “Register” to create an account or “Login” if you already have one.
-    2. Employee Features → After logging in, you will see a welcome page. Browse snacks on the dashboard and click “+ Order” to request snacks. Click “Order History” in the             sidebar to check order statuses. Go to “Profile” to see your daily limit and favorite snacks.
+    2. Employee Features → After logging in, you will see a welcome page. Browse snacks on the dashboard and click “+ Order” to request snacks. Click “Order History” in the sidebar to check order statuses. Go to “Profile” to see your daily limit and favorite snacks.
     3. Admin Features → Admins have a custom sidebar and access to:
           - All snack orders from employees (with Approve/Deny options)
           - Inventory management (add/edit stock)
@@ -180,9 +180,4 @@ Lalithya Gangula: Developed employee profile (front + back) and built admin dash
   5. Invest more time upfront in learning technologies together as a team.
 
 ## License
-This project is not yet licensed and is intended solely for academic evaluation.
-
-## Authors & Copyright
-© 2025 Salma Bhar, Lalithya Reddy Gangula, Lakshmi Kunjan, and Dhoopshikha Basgeet.  
-All rights reserved. This project was developed as part of CSDS 393: Software Engineering at Case Western Reserve University during the Spring 2025 semester.
-
+License information will be added here soon. This is just a placeholder until we get an appropriate open-source license.
