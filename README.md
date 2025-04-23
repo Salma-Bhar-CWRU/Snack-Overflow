@@ -179,3 +179,10 @@ Lalithya Gangula: Developed employee profile (front + back) and built admin dash
   4. Define global CSS and design patterns in advance to maintain consistency.
   5. Invest more time upfront in learning technologies together as a team.
 
+## License
+This project is not yet licensed and is intended solely for academic evaluation.
+
+## Authors & Copyright
+© 2025 Salma Bhar, Lalithya Reddy Gangula, Lakshmi Kunjan, and Dhoopshikha Basgeet.  
+All rights reserved. This project was developed as part of CSDS 393: Software Engineering at Case Western Reserve University during the Spring 2025 semester.
+
