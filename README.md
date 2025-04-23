@@ -146,7 +146,7 @@ Test Login Credentials
   3. REST API – Communication layer between frontend and backend 
 
 - Database: 
-1. MySQL – Relational database for storing user info, snack inventory, and order history 
+  1. MySQL – Relational database for storing user info, snack inventory, and order history 
 
 ## Contributions 
 
