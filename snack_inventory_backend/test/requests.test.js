@@ -11,11 +11,11 @@ test('request in-stock snack', () => {
 });
 
 test('deny snack request after daily limit', () => {
-  const user = "user@example.com";
-  requestSnack(user, "Chips");
-  requestSnack(user, "Cookies");
-  requestSnack(user, "Granola Bar");
-  const result = requestSnack(user, "Trail Mix");
+  const user = "test@gmail.com";
+  requestSnack(user, "Oreo Mini");
+  requestSnack(user, "Oreo Mini");
+  requestSnack(user, "Oreo Mini");
+  const result = requestSnack(user, "Oreo Mini");
   expect(result.error).toBe("Daily snack limit exceeded");
 });
 
