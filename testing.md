@@ -114,7 +114,7 @@ Sends a password reset link to the user's email.
 ### Step 1: Install Dependencies
 ```bash
 npm install
-
+```
 
 ## TestFiles and their coverages 
 Test File | Description </br>
@@ -129,7 +129,7 @@ history.test.js | Tests employee and admin request history view </br>
 
 
 ## Sample Test Snippet 
-
+```bash
 test('should deny snack request after limit reached', () => {
   const user = "user@example.com";
   requestSnack(user, "Chips");
@@ -138,6 +138,7 @@ test('should deny snack request after limit reached', () => {
   const response = requestSnack(user, "Trail Mix");
   expect(response.error).toBe("Daily snack limit exceeded");
 });
+```
 
 # Contributors
 Developed and tested by: </br>
