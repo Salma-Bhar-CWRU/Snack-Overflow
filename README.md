@@ -50,7 +50,7 @@ Data Model Diagram (Snack Order Flow)
 
 - Prerequisites
     1. Node.js & npm installed
-    2. MySQL server running locally
+    2. MySQL server running locally. We included in the source code "/mysqlcommands.txt" for the SQL setup commands and "/databasedebugging.txt" for SQL test/debug notes. You will need to create the database yourself or contact the authors to get authentitification information to the database.
     3. VS Code with REST Client extension (for API testing)
 
 - Setup Steps (In the terminal) 
