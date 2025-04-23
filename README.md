@@ -89,8 +89,8 @@ Test Login Credentials
 
 ## Folder Structure overview 
 
-/components # sidebar layout components for admins and employees
-/components/EmployeeSidebarLayout.js # layout for employee sidebar
+/components # sidebar layout components for admins and employees 
+/components/EmployeeSidebarLayout.js # layout for employee sidebar 
 /components/SidebarLayout.js # base sidebar layout component
 /components/test # placeholder for future test components
 
