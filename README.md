@@ -132,3 +132,50 @@ Test Login Credentials
 /databasedebugging.txt # SQL test/debug notes </br>
 /mysqlcommands.txt # reusable SQL setup commands </br>
 
+## Tech Stack and dependencies 
+
+- Frontend: 
+  1. HTML, CSS – Styling and layout 
+  2. JavaScript – Logic and interactivity 
+  3. React.js – Component-based frontend framework 
+  4. VS Code – Development environment 
+
+- Backend: 
+  1. Node.js – Server-side runtime environment 
+  2. Express.js – Web framework for handling routes and APIs 
+  3. REST API – Communication layer between frontend and backend 
+
+- Database: 
+1. MySQL – Relational database for storing user info, snack inventory, and order history 
+
+## Contributions 
+
+Salma Bhar: Database management and backend logic for snack limits and inventory updates. Built employee order history and collaborated on admin/employee profile designs. 
+ </br> 
+
+Dhoopshikha Basgeet: Built admin profile and inventory frontend, plus statistics page UI. Developed approve/deny logic and helped with employee dashboard frontend. 
+ </br> 
+
+Lakshmi Kunjan: Created backend for admin profile, inventory, and statistics page. Worked on employee dashboard frontend and profile page sketches. 
+ </br> 
+
+Lalithya Gangula: Developed employee profile (front + back) and built admin dashboard features. Helped implement inventory backend and approve/deny request functionality.
+ </br> 
+
+
+## Development Retrospective
+- Challenges & Mistakes:
+  1. Most of the team was new to React, so we initially built the project using HTML/CSS/JavaScript. This made migration more difficult and time-consuming.
+  2. Learning core React concepts like state, props, and hooks took effort, as we relied on documentation and tutorials.
+  3. Linking user roles to specific dashboards (admin vs employee) required careful backend logic and protected frontend routing.
+  4. Syncing snack requests and approvals required designing a unified inventory table and coordinating backend status updates.
+  5. We underestimated the value of consistent design early on and had to standardize styles late in development.
+   </br> 
+   
+- Lessons Learned / Suggestions:
+  1. Decide and commit to the core tech stack from the start (especially when using a framework like React).
+  2. Design key database schemas early and plan data flow between roles.
+  3. Protect routes and handle roles early in development to avoid logic gaps later.
+  4. Define global CSS and design patterns in advance to maintain consistency.
+  5. Invest more time upfront in learning technologies together as a team.
+
