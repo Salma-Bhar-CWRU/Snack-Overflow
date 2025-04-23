@@ -56,7 +56,7 @@ Data Model Diagram (Snack Order Flow)
 - Setup Steps (In the terminal) 
 
     1. Clone the repository </br>
-    https://github.com/your-team/snack-overflow.git
+    https://github.com/Salma-Bhar-CWRU/Snack-Overflow.git
 
     2. Start the frontend (React app) </br>
     cd snack-overflow-frontend </br>
