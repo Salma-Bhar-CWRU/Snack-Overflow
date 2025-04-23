@@ -89,46 +89,46 @@ Test Login Credentials
 
 ## Folder Structure overview 
 
-/components # sidebar layout components for admins and employees 
-/components/EmployeeSidebarLayout.js # layout for employee sidebar 
-/components/SidebarLayout.js # base sidebar layout component
-/components/test # placeholder for future test components
+/components # sidebar layout components for admins and employees </br>
+/components/EmployeeSidebarLayout.js # layout for employee sidebar </br>
+/components/SidebarLayout.js # base sidebar layout component </br>
+/components/test # placeholder for future test components </br>
 
-/pages # all frontend pages for users and admins
-/pages/AdminDashboard.js # admin dashboard view
-/pages/AdminProfile.js # admin profile page
-/pages/EmployeeProfile.js # employee profile page
-/pages/ForgotPassword.js # email recovery view
-/pages/InventoryPage.js # admin snack inventory management
-/pages/Login.js # user login page
-/pages/OrderHistory.js # view employee snack order history
-/pages/Register.js # user registration page
-/pages/ResetPassword.js # password reset page
-/pages/StatsPage.js # admin statistics visualization
-/pages/UserDashboard.js # employee snack dashboard
+/pages # all frontend pages for users and admins </br>
+/pages/AdminDashboard.js # admin dashboard view </br>
+/pages/AdminProfile.js # admin profile page </br>
+/pages/EmployeeProfile.js # employee profile page </br>
+/pages/ForgotPassword.js # email recovery view </br>
+/pages/InventoryPage.js # admin snack inventory management </br>
+/pages/Login.js # user login page </br>
+/pages/OrderHistory.js # view employee snack order history </br>
+/pages/Register.js # user registration page </br>
+/pages/ResetPassword.js # password reset page </br>
+/pages/StatsPage.js # admin statistics visualization </br>
+/pages/UserDashboard.js # employee snack dashboard </br>
 
-/App.js # main React component with route structure
-/App.test.js # unit test for App component
-/setupTests.js # test config setup for React Testing Library
-/reportWebVitals.js # optional performance reporting
-/index.js # React entry point
-/index.css # base styles
-/App.css # component styles
-/logo.png # application logo asset
+/App.js # main React component with route structure </br>
+/App.test.js # unit test for App component </br>
+/setupTests.js # test config setup for React Testing Library </br>
+/reportWebVitals.js # optional performance reporting </br>
+/index.js # React entry point </br>
+/index.css # base styles </br>
+/App.css # component styles </br>
+/logo.png # application logo asset </br>
 
-/routes # all backend Express route files
-/routes/auth.js # login, register, password reset routes
-/routes/inventory.js # manage snack inventory
-/routes/orders.js # submit and view orders
-/routes/snacks.js # snack listing API
-/routes/stats.js # generate snack statistics
+/routes # all backend Express route files </br>
+/routes/auth.js # login, register, password reset routes </br>
+/routes/inventory.js # manage snack inventory </br>
+/routes/orders.js # submit and view orders </br>
+/routes/snacks.js # snack listing API </br>
+/routes/stats.js # generate snack statistics </br>
 
-/db.js # connects backend to MySQL database
-/server.js # starts Node.js Express server
-/.env # environment variables (DB credentials, keys)
-/package.json # backend project dependencies
-/package-lock.json # locked versions of backend packages
-/README.md # backend readme (optional or inherited)
-/databasedebugging.txt # SQL test/debug notes
-/mysqlcommands.txt # reusable SQL setup commands
+/db.js # connects backend to MySQL database </br>
+/server.js # starts Node.js Express server </br>
+/.env # environment variables (DB credentials, keys) </br>
+/package.json # backend project dependencies </br>
+/package-lock.json # locked versions of backend packages </br>
+/README.md # backend readme (optional or inherited) </br>
+/databasedebugging.txt # SQL test/debug notes </br>
+/mysqlcommands.txt # reusable SQL setup commands </br>
 
