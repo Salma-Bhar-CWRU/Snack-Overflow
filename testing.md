@@ -117,14 +117,13 @@ npm install
 ```
 
 ## TestFiles and their coverages 
-Test File | Description </br>
-auth.test.js | Tests user registration, login, and password reset </br>
-requests.test.js | Tests snack requests and daily limit validation </br>
-admin.test.js | Tests admin approval and denial workflows </br>
-inventory.test.js | Tests stock updates and low-stock alert triggering </br>
-reports.test.js | Tests report generation and top snack display </br>
-limits.test.js | Tests 24-hour daily snack limit reset logic </br>
-history.test.js | Tests employee and admin request history view </br>
+tests/auth.test.js | Tests user registration, login, and password reset </br>
+tests/requests.test.js | Tests snack requests and daily limit validation </br>
+tests/admin.test.js | Tests admin approval and denial workflows </br>
+tests/inventory.test.js | Tests stock updates and low-stock alert triggering </br>
+tests/reports.test.js | Tests report generation and top snack display </br>
+tests/limits.test.js | Tests 24-hour daily snack limit reset logic </br>
+tests/history.test.js | Tests employee and admin request history view </br>
 
 
 ## Sample Test Snippet 
