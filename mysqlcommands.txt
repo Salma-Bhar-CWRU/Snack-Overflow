@@ -1,0 +1,13 @@
+CREATE DATABASE snack_inventory;
+USE snack_inventory;
+
+CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, username VARCHAR(255) NOT NULL, email VARCHAR(255) UNIQUE NOT NULL, password_hash VARCHAR(255) NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+
+ALTER TABLE users ADD COLUMN user_type VARCHAR(50) NOT NULL DEFAULT 'user';
+
+CREATE TABLE snacks (snack_id INT AUTO_INCREMENT PRIMARY KEY, snack_name VARCHAR(255) NOT NULL);
+INSERT INTO snacks (snack_name) VALUES ('Twix'), ('Nerds'), ('Lays Classic'), ('Lays Barbecue'), ('Oreo Mini'), ('Mini Chips Ahoy'), ('Nutri Grain Strawberry Bar'), ('Skinny Pop Popcorn'), ('Welch\'s Fruit Snacks'), ('Nature Valley Granola Bar'), ('Cheez-It');
+CREATE TABLE orders (order_id INT AUTO_INCREMENT PRIMARY KEY, order_number VARCHAR(50) NOT NULL, user_id INT NOT NULL, snack_id INT NOT NULL, date_ordered DATE NOT NULL, order_status ENUM('Pending', 'Approved', 'Denied', 'Completed') NOT NULL, FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY (snack_id) REFERENCES snacks(snack_id) ON DELETE CASCADE);
+
+CREATE TABLE inventory (inventory_id INT AUTO_INCREMENT PRIMARY KEY, snack_id INT NOT NULL, quantity INT NOT NULL, expiry_date DATE NOT NULL, reorder_quantity INT NOT NULL, FOREIGN KEY (snack_id) REFERENCES snacks(snack_id) ON DELETE CASCADE);
+CREATE VIEW monthly_snack_stats AS SELECT snack_id, COUNT(*) AS number_of_orders, MONTH(date_ordered) AS month FROM orders GROUP BY snack_id, MONTH(date_ordered);

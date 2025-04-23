@@ -1,0 +1,15 @@
+{
+    "source": {
+      "include": [
+        "src/components",
+        "src/pages"
+      ],
+      "includePattern": ".js$",
+      "excludePattern": "(node_modules/|build|docs)"
+    },
+    "opts": {
+      "destination": "./docs",
+      "recurse": true,
+      "template": "default"
+    }
+  }
