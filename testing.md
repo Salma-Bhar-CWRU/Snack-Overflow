@@ -122,7 +122,6 @@ auth.test.js | Tests user registration, login, and password reset </br>
 requests.test.js | Tests snack requests and daily limit validation </br>
 admin.test.js | Tests admin approval and denial workflows </br>
 inventory.test.js | Tests stock updates and low-stock alert triggering </br>
-notifications.test.js | Tests real-time user notifications </br>
 reports.test.js | Tests report generation and top snack display </br>
 limits.test.js | Tests 24-hour daily snack limit reset logic </br>
 history.test.js | Tests employee and admin request history view </br>
