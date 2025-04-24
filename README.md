@@ -204,4 +204,5 @@ Lalithya Gangula: Developed employee profile (front + back) and built admin dash
   5. Invest more time upfront in learning technologies together as a team.
 
 ## License
-License information will be added here soon. This is just a placeholder until we get an appropriate open-source license.
+License information will be added here soon. This is just a placeholder until we get an appropriate open-source license. </br>
+This project was developed as part of a semester-long assignment for CSDS 393 Software Engineering course at Case Western Reserve University.
